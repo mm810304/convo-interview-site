@@ -1,0 +1,26 @@
+.headerContainer {
+  width: 75%;
+  margin: 1rem auto;
+}
+
+.title {
+  text-align: center;
+  font-size: var(--large-title-size);
+  color: var(--base-color);
+  margin-bottom: 1rem;
+}
+
+.description {
+  text-align: center;
+  font-size: var(--large-description-text);
+  color: var(--text-gray);
+  margin-bottom: 1rem;
+  line-height: var(--description-line-height);
+}
+
+@media (max-width: 550px) {
+  .headerContainer {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}

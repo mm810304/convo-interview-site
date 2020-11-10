@@ -1,0 +1,24 @@
+footer {
+  height: 9rem;
+  width: 100%;
+  background: #222;
+  color: var(--off-white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  margin: .5rem 3rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+footer a {
+  color: var(--base-color);
+}
+
+footer a:hover {
+  color: var(--off-white);
+}

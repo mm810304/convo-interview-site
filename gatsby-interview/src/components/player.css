@@ -1,0 +1,8 @@
+audio {
+  width: 100%;
+}
+
+.react-audio-player, .react-audio-player *:focus {
+  outline: none;
+}
+

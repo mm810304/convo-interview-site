@@ -1,0 +1,89 @@
+.pageContainer {
+  width: 75%;
+  margin: 1rem auto;
+}
+
+.header {
+  text-align: center;
+  margin: 3rem;
+}
+
+.title {
+  font-size: var(--large-title-size);
+  color: var(--base-color);
+}
+
+.description {
+  font-size: var(--large-description-text);
+  color: var(--text-gray);
+  line-height: var(--description-line-height);
+}
+
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  gap: 4rem;
+}
+
+.cardContainer {
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 2rem;
+}
+
+.card {
+  display: grid;
+  grid-template-areas: "image text";
+  grid-template-columns: 200px 6fr;
+  align-items: top;
+
+}
+
+a {
+  color: var(--text-gray);
+}
+
+.image {
+  width: 200px;
+  grid-area: image;
+  align-self: center;
+}
+
+.lessonInfo {
+  grid-area: text;
+  margin: 0 2rem;
+}
+
+.lessonTitle {
+  font-size: 2.4rem;
+}
+
+.lessonNumber {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.numberBorder {
+  border: 2px solid var(--base-color);
+  padding: .5rem;
+}
+
+.cardContainer:hover .lessonTitle {
+  color: var(--base-color);
+}
+
+.cardContainer:hover .numberBorder {
+  border: none;
+  color: var(--base-color);
+  font-weight: bold;
+}
+
+.cardContainer:hover .image {
+  filter: brightness(0.90);
+}
+
+
+
+
+
+
