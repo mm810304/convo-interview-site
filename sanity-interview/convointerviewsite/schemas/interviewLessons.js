@@ -69,15 +69,10 @@ export default {
     {
       name: 'image',
       title: 'Lesson Image',
-      type: 'reference',
+      type: 'image',
       options: {
-        hotspot: true
+        hotspot: true,
       },
-      to: [
-        {
-          type: 'images_business'
-        }
-      ]
     },
   ],
   preview: {

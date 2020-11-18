@@ -1,5 +1,5 @@
 .container {
-  font-size: 2rem;
+  font-size: var(--regular-font-size);
   color: var(--text-gray);
   line-height: 1.4;
   margin-top: 2rem;

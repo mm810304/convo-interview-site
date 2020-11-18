@@ -8,8 +8,8 @@ function SingleCategory({ category }) {
   return (
     <div className={categoryStyles.card}>
       <Link to={`/category/${category.slug.current}`}>
-        <Img 
-          fluid={category.image.image.asset.fluid} 
+      <Img 
+          fluid={category.image.asset.fluid} 
           alt={category.image.image_description} 
           className={categoryStyles.image}
         />

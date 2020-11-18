@@ -32,7 +32,6 @@ async function turnLessonsIntoCategoryPages({ graphql, actions }) {
 }
 
 async function turnLessonIntoLessonPage({ graphql, actions}) {
-  console.log('Turning lesson into page');
   const lessonTemplate = path.resolve('./src/templates/Lesson.js');
 
   const { data } = await graphql(`
@@ -61,10 +60,43 @@ async function turnLessonIntoLessonPage({ graphql, actions}) {
   })
 }
 
+async function turnBlogIntoBlogPage({ graphql, actions }) {
+  const blogTemplate = path.resolve('./src/templates/Blog.js');
+
+  const { data } = await graphql(`
+  query {
+    blogs: allSanityInterviewBlogs {
+      nodes {
+        id
+        title
+        content
+        vocabulary
+        slug {
+          current
+        }
+      }
+    }
+  }
+`);
+
+data.blogs.nodes.forEach((blog) => {
+  actions.createPage({
+    path: `blogs/${blog.slug.current}`,
+    component: blogTemplate,
+    context: {
+      title: blog.title,
+      blogId: blog.id
+    }
+  });
+});
+
+}
+
 exports.createPages = async (params) => {
   await Promise.all([
     turnLessonsIntoCategoryPages(params),
-    turnLessonIntoLessonPage(params)
+    turnLessonIntoLessonPage(params),
+    turnBlogIntoBlogPage(params)
   ]);
 }
   

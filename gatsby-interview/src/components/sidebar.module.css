@@ -3,9 +3,7 @@
   height: 0;
 }
 
-
-
-@media (max-width: 750px) {
+@media (max-width: 900px) {
   .sidebar {
     background: gray;
     position: fixed;
@@ -35,23 +33,23 @@
     cursor: pointer;
   }
   
-  ul {
+  .list {
     list-style-type: none;
+
   }
   
-  li a {
+  .list li a {
     display: block;
     text-align: center;
     text-transform: capitalize;
     color: white;
-    margin-bottom: 0.5rem;
     font-size: 3.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     transition: all .3s linear;
     border-radius: 10px
   }
   
-  a {
+  .list a {
     text-decoration: none;
   }
 }

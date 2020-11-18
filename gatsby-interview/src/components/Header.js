@@ -9,10 +9,10 @@ import headerStyles from './header.module.css';
 
 const Header = ({ toggleSidebar }) => {
   return (
-    <div className={headerStyles.navbar}>
+    <header className={headerStyles.navbar}>
       <div className={headerStyles.navCenter}>
         <div className={headerStyles.navHeader}>
-        <Link to="/"><h2 className={headerStyles.logo}>Interview</h2></Link>
+        <Link to="/"><h2 className={headerStyles.logo}>Convo</h2></Link>
           <button type="button" onClick={toggleSidebar}>
             <FaAlignRight></FaAlignRight>
           </button>
@@ -26,7 +26,7 @@ const Header = ({ toggleSidebar }) => {
           </ul>
         </div>
       </div>
-    </div>
+    </header>
   )
 };
 

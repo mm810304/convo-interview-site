@@ -33,15 +33,10 @@ export default {
     {
       name: 'image',
       title: 'Category Image',
-      type: 'reference',
+      type: 'image',
       options: {
         hotspot: true,
       },
-      to: [
-        {
-          type: 'images_business'
-        }
-      ]
     },
   ],
 }

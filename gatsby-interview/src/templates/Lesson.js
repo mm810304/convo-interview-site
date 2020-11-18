@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import SEO from '../components/SEO';
 
 import Layout from '../components/Layout';
 import Dialogue from '../components/Dialogue';
@@ -10,7 +10,7 @@ import Patterns from '../components/Patterns';
 
 import lessonStyle from './lesson.module.css';
 
-const Lesson = ({ data: { lesson } }) => {
+const Lesson = ({ data: { lesson }, pageContext }) => {
     const [audio, setAudio] = useState(lesson.full_audio.asset.url);
     const [autoPlay, setAutoPlay] = useState(false);
     const [fullAudioChecked, setFullAudioChecked] = useState(true);
@@ -33,15 +33,12 @@ const Lesson = ({ data: { lesson } }) => {
     };
 
     return (
+      <React.Fragment>
+        <SEO title={pageContext.lessonTitle} description={`"${pageContext.lessonTitle}" - Learn professional and fluent ways to answer this English job interview question, listen to and see examples, and practice speaking to be ready to answer it fluently.`}/>
         <Layout>
           <div className={lessonStyle.wrapper}>
             <h1 className={lessonStyle.title}>{lesson.title}</h1>
             <LessonDirections />
-            <Img 
-              fluid={lesson.image.image.asset.fluid}
-              alt={lesson.image.image_description}
-              className={lessonStyle.image}
-            />
             <Player 
               audioFile={audio}
               style={{ width: '80%' }}
@@ -50,11 +47,11 @@ const Lesson = ({ data: { lesson } }) => {
             <div className={lessonStyle.audioChoiceWrapper}>
                 <div className={lessonStyle.audioChoice}>
                   <input className={lessonStyle.hiddenRadio} type="radio" id="full-audio" name="audio" value="full" checked={fullAudioChecked} onChange={handleAudioChange} />
-                  <label className={lessonStyle.audioChoiceLabel} for="full-audio">Listen to Full Conversation</label>
+                  <label className={lessonStyle.audioChoiceLabel} htmlFor="full-audio">Listen to Full Conversation</label>
                 </div>
                 <div className={lessonStyle.audioChoice}>
                   <input className={lessonStyle.hiddenRadio} type="radio" id="part-audio" name="audio" value="part" checked={partAudioChecked} onChange={handleAudioChange} />
-                  <label className={lessonStyle.audioChoiceLabel} for="part-audio">Say Interviewee's Part</label>
+                  <label className={lessonStyle.audioChoiceLabel} htmlFor="part-audio">Say Interviewee's Part</label>
                 </div>
             </div> 
             <section className={lessonStyle.dialogueContainer}>
@@ -65,6 +62,8 @@ const Lesson = ({ data: { lesson } }) => {
             </section>
           </div>
         </Layout>
+      </React.Fragment>
+        
     );
 };
 
@@ -74,16 +73,6 @@ export const query = graphql`
       title
       dialogue
       patterns
-      image {
-        image_description
-        image {
-          asset {
-            fluid(maxWidth: 800) {
-              ...GatsbySanityImageFluid
-            }
-          }
-        }
-      }
       full_audio {
         asset {
           title

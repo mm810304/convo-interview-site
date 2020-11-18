@@ -1,0 +1,42 @@
+.wrapper {
+  width: 50%;
+  margin: 2rem auto;
+  font-size: var(--regular-font-size);
+}
+
+.title {
+  font-size: var(--large-title-size);
+  color: var(--base-color);
+  text-align: center;
+  margin: 0 .5rem 2rem .5rem;
+  font-family: var(--title-font);
+}
+
+.content {
+  line-height: 1.3;
+  font-family: var(--text-font);
+}
+
+
+.content li {
+  font-size: var(--regular-font-size);
+  margin-top: .5rem;
+}
+
+.vocabulary {
+  padding-bottom: 4rem;
+  font-family: var(--text-font);
+}
+
+.vocabulary h2 {
+  font-size: var(--medium-title-size);
+  color: var(--base-color);
+  text-align: center;
+  margin: 2rem 0;
+  font-family: var(--title-font);
+}
+
+.vocabulary li {
+  margin-left: 3rem;
+}
+

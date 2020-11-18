@@ -6,8 +6,8 @@ export const linkData = [
     },
     {
         id: 2,
-        text: 'Blog',
-        url: '/blog'
+        text: 'Interview Advice',
+        url: '/blogs'
     },
     {
         id: 3,
@@ -15,9 +15,9 @@ export const linkData = [
         url: '/listoflessons'
     },
     {
-        id: 4,
-        text: 'Sentence Patterns',
-        url: '/patterns'
+      id: 4,
+      text: 'English Resources',
+      url: '/convo'
     }
 ];
 

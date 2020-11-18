@@ -38,6 +38,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+config/
 
 # Optional npm cache directory
 .npm
@@ -70,3 +71,4 @@ yarn-error.log
 
 .prettierignore
 .prettierrc
+

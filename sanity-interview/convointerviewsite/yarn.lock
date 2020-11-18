@@ -995,14 +995,12 @@
 "@sanity/block-content-to-html@^1.3.8":
   version "1.3.8"
   resolved "https://registry.yarnpkg.com/@sanity/block-content-to-html/-/block-content-to-html-1.3.8.tgz#eff8e3dafe82f4a7e10ed914f7fa646c3e59ec2d"
-  integrity sha512-eXXilwPQCFe2uHMK5DItzZWg2CgaCfbo2hpcY1BbJEDPNhPjRlkaNBxM65U9M6yxreNnFffTNWHORVX3vZmIeQ==
   dependencies:
     "@sanity/block-content-to-hyperscript" "^2.0.5"
 
 "@sanity/block-content-to-hyperscript@^2.0.5":
   version "2.0.10"
   resolved "https://registry.yarnpkg.com/@sanity/block-content-to-hyperscript/-/block-content-to-hyperscript-2.0.10.tgz#9cf805c5d2341d043bcab8b3740c9b3466b5ae6b"
-  integrity sha512-xT3iEmZkK0fvO5PDFpn9GMWGfvOopvbrRCBU48XxpFoTxRrfsHhxbRy8J0eND1HGXHUENkIKv5jbohtGd1MiVg==
   dependencies:
     "@sanity/generate-help-url" "^0.140.0"
     "@sanity/image-url" "^0.140.15"
@@ -1352,7 +1350,6 @@
 "@sanity/generate-help-url@^0.140.0":
   version "0.140.0"
   resolved "https://registry.yarnpkg.com/@sanity/generate-help-url/-/generate-help-url-0.140.0.tgz#f60ab75be5fdc346b9f0d1c2a0858aa3c2870109"
-  integrity sha512-H/G/WA9S22TXcXST52CIiTsHx3S2hH0gvK7LnI5w76vfKS0obnDPh8jrPg4xeNRYGPuV9MHYRlyERGpRGoo4Qw==
 
 "@sanity/image-url@^0.140.15", "@sanity/image-url@^0.140.19":
   version "0.140.19"
@@ -2223,7 +2220,6 @@ browser-process-hrtime@^1.0.0:
 browser-split@0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/browser-split/-/browser-split-0.0.0.tgz#41419caef769755929dd518967d3eec0a6262771"
-  integrity sha1-QUGcrvdpdVkp3VGJZ9PuwKYmJ3E=
 
 browserify-aes@^1.0.0, browserify-aes@^1.0.4:
   version "1.2.0"
@@ -2407,7 +2403,6 @@ camelcase@^4.1.0:
 camelcase@^5.0.0:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
-  integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
 camelize@^1.0.0:
   version "1.0.0"
@@ -2526,7 +2521,6 @@ circular-at@^1.0.3:
 class-list@~0.1.0, class-list@~0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/class-list/-/class-list-0.1.1.tgz#9b9745192c4179b5da0a0d7633658e3c70d796cb"
-  integrity sha1-m5dFGSxBebXaCg12M2WOPHDXlss=
   dependencies:
     indexof "0.0.1"
 
@@ -4280,7 +4274,6 @@ html-comment-regex@^1.1.0:
 html-element@^2.0.0:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/html-element/-/html-element-2.3.1.tgz#5feb23dd5226467ef8c2faec51a5bf29c4ef5440"
-  integrity sha512-xnFt2ZkbFcjc+JoAtg3Hl89VeEZDjododu4VCPkRvFmBTHHA9U1Nt6hLUWfW2O+6Sl/rT1hHK/PivleX3PdBJQ==
   dependencies:
     class-list "~0.1.1"
 
@@ -4339,7 +4332,6 @@ humanize-ms@^1.2.1:
 hyperscript@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/hyperscript/-/hyperscript-2.0.2.tgz#3839cba45554bdfe27bb81c2142d1684f8135af5"
-  integrity sha1-ODnLpFVUvf4nu4HCFC0WhPgTWvU=
   dependencies:
     browser-split "0.0.0"
     class-list "~0.1.0"
@@ -4417,7 +4409,6 @@ indexes-of@^1.0.1:
 indexof@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/indexof/-/indexof-0.0.1.tgz#82dc336d232b9062179d05ab3293a66059fd435d"
-  integrity sha1-gtwzbSMrkGIXnQWrMpOmYFn9Q10=
 
 inflight@^1.0.4:
   version "1.0.6"
@@ -6791,7 +6782,6 @@ react-icon-base@^2.1.2:
 react-icons@^3.11.0:
   version "3.11.0"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-3.11.0.tgz#2ca2903dfab8268ca18ebd8cc2e879921ec3b254"
-  integrity sha512-JRgiI/vdF6uyBgyZhVyYJUZAop95Sy4XDe/jmT3R/bKliFWpO/uZBwvSjWEdxwzec7SYbEPNPck0Kff2tUGM2Q==
   dependencies:
     camelcase "^5.0.0"
 
@@ -7261,6 +7251,10 @@ sanity-diff-patch@^1.0.9:
   resolved "https://registry.npmjs.org/sanity-diff-patch/-/sanity-diff-patch-1.0.9.tgz#fb1fa3b52c27d369878af57ba02fee779b3ca8bd"
   dependencies:
     diff-match-patch "^1.0.5"
+
+sanity-plugin-asset-source-cloudinary@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npmjs.org/sanity-plugin-asset-source-cloudinary/-/sanity-plugin-asset-source-cloudinary-0.1.0.tgz#bb4171abb10ffc74f86a021a774d8b3ff21d07d4"
 
 sax@~1.2.4:
   version "1.2.4"

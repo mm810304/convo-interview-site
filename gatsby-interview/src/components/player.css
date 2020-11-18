@@ -2,6 +2,11 @@ audio {
   width: 100%;
 }
 
+.react-audio-player {
+  border: 2px solid var(--base-color);
+  border-radius: 5px;
+}
+
 .react-audio-player, .react-audio-player *:focus {
   outline: none;
 }

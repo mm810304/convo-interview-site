@@ -1,14 +1,12 @@
 .navbar {
   height: 10vh;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
 }
 
 .navCenter {
   width: 90vw;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -36,20 +34,30 @@ button {
 }
 
 li {
-  margin-right: 3rem;
+  margin-right: 3.5rem;
   font-size: 2.2rem;
 }
 
-.header-a {
+header a {
   text-decoration: none;
   color: var(--text-gray);
 }
 
-.header-a:hover {
+header a:hover {
   color: var(--base-color);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1100px) {
+  .navCenter {
+    width: 100vw;
+  }
+  
+  .logo {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 900px) {
   button {
     display: flex;
     align-items: center;
@@ -67,6 +75,12 @@ li {
 
   .pageLinks {
     display: none;
+  }
+}
+
+@media (max-width: 500px) { 
+  .logo {
+    margin-left: 0;
   }
 }
 

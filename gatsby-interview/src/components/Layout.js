@@ -5,7 +5,6 @@ import Footer from './Footer';
 import Sidebar from './Sidebar';
 
 import 'normalize.css';
-import 'react-h5-audio-player/lib/styles.css';
 import '../styles/index.css';
 import layoutStyles from './layout.module.css';
 

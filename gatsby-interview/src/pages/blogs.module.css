@@ -1,0 +1,31 @@
+.main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 1rem auto;
+}
+
+.headerText {
+  font-size: var(--large-title-size);
+  color: var(--base-color);
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.header p {
+  text-align: center;
+  font-size: var(--large-description-text);
+  color: var(--text-gray);
+  margin-bottom: 1rem;
+  line-height: var(--description-line-height);
+}
+
+.blogListContainer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+

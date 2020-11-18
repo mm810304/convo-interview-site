@@ -19,7 +19,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         <FaTimes />
       </button>
       <div className={sidebarStyles.linkContainer}>
-        <ul>
+        <ul className={sidebarStyles.list}>
           {linkData.map((link) => {
             return (
               <li key={link.id}>

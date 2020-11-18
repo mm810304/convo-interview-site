@@ -13,16 +13,18 @@
   --text-gray-lighter: #6c706c;
   --light-gray-background: #F1F1EA;
   --off-white: #fefefa;
+  --silver: #c2bebe;
 
   --large-title-size: 4rem;
   --medium-title-size: 3.2rem;
   --small-title-size: 2.4rem;
 
+  --regular-font-size: 2rem;
+
   --large-description-text: 2.2rem;
   --small-description-text: 1.8rem;
 
-  --description-line-height: 1.5;
-
+  --description-line-height: 1.5; 
 }
 
 html {
@@ -31,6 +33,7 @@ html {
 
 body {
   background: var(--light-gray-background);
+  font-family: 'Open Sans';
 }
 
 a {

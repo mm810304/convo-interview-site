@@ -8,15 +8,15 @@ const LessonDirections = () => {
   return (
     <article className={LessonDirectionsStyle.directions}>
       <header className={LessonDirectionsStyle.header}>
-        <h2>How to Use</h2>
-        <button
-          className={LessonDirectionsStyle.button}
-          type="button"
-          onClick={() => setShowInfo(!showInfo)}
-        >
-          {showInfo ? <FaMinus /> : <FaPlus />}
-        </button>
-      </header>
+      <h2>How to Use</h2>
+      <button
+        className={LessonDirectionsStyle.button}
+        type="button"
+        onClick={() => setShowInfo(!showInfo)}
+      >
+        {showInfo ? <FaMinus /> : <FaPlus />}
+      </button>
+    </header>
       {showInfo && <div className={LessonDirectionsStyle.content}>
         <div className={LessonDirectionsStyle.contentText}>
           <p className={LessonDirectionsStyle.introDirections}>You can listen to either the whole conversation or you can practice speaking by saying the interviewee's part.  Select your choice below.  There are also example sentence patterns below that you can use in your interview.</p>

@@ -8,6 +8,7 @@ module.exports = {
     description: `Practice speaking English and prepare for your next job interview.`
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-sanity',
       options: {
@@ -16,6 +17,15 @@ module.exports = {
         watchMode: true,
         token: process.env.SANITY_TOKEN,
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts : [
+            `Open Sans\:400,700`
+        ],
+        display: `swap`
+      },
     },
   ],
 }

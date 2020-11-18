@@ -8,7 +8,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 import interviewLessons from './interviewLessons';
 import interviewCategories from './interviewCategories';
-import businessImages from './businessImages';
+import blogPosts from './blogPosts';
 
 
 export default createSchema({
@@ -19,6 +19,6 @@ export default createSchema({
   types: schemaTypes.concat([
     interviewCategories,
     interviewLessons,
-    businessImages,
+    blogPosts
   ])
 })
