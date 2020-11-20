@@ -1,6 +1,5 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import AdSense from 'react-adsense';
 
 import Layout from '../components/Layout';
 import CategoryList from '../components/CategoryList';

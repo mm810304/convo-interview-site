@@ -1,5 +1,4 @@
 import React from 'react';
-import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import { resourceData } from '../constants/Resources';
 
@@ -15,10 +14,10 @@ const Convo = () => {
         {
           resourceData.map((resource) => {
             return (
-              <OutboundLink href={resource.url} target="_blank" rel="noreferrer"><div key={resource.id} className={resourceStyles.resource}>
+              <a href={resource.url} target="_blank" rel="noreferrer"><div key={resource.id} className={resourceStyles.resource}>
                 <h2>{resource.text}</h2>
                 <p>{resource.description}</p>
-              </div></OutboundLink>
+              </div></a>
             )
           })
         }

@@ -11,12 +11,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-148727012-3",
+        trackingId: 'UA-148727012-3',
         head: true,
         anonymize: true,
-        respectDNT: true,
-        pageTransitionDelay: 0,
-      }
+      },
     },
     'gatsby-plugin-react-helmet',
     {
