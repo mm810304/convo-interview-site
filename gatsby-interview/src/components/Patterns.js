@@ -16,6 +16,7 @@ const Patterns = ({ patterns }) => {
             className={patternsStyle.button}
             type="button"
             onClick={(e) => setShowPatterns(!showPatterns)}
+            aria-label="Show Sentence Patterns"
           >
             {showPatterns ? <FaMinus /> : <FaPlus />}
           </button>

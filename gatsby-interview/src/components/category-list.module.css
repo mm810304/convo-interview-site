@@ -50,6 +50,7 @@
 .border {
   border: .35rem solid var(--base-color); 
   padding: .75rem;
+  background-color: var(--light-gray-background);
 }
 
 

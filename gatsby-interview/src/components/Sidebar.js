@@ -15,7 +15,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         [sidebarStyles.showSidebar]: isOpen
       }
     )}>
-      <button type="button" className={sidebarStyles.closeButton} onClick={toggleSidebar}>
+      <button type="button" className={sidebarStyles.closeButton} onClick={toggleSidebar} aria-label="Close Menu">
         <FaTimes />
       </button>
       <div className={sidebarStyles.linkContainer}>

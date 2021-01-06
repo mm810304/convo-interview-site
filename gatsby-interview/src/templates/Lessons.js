@@ -28,9 +28,16 @@ const SingleLesson = ({ lesson }) => {
 const LessonsPage = ({ data, pageContext }) => {
   const lessons = data.lessons.nodes;
   lessons.sort((a, b) => a.lesson_number > b.lesson_number ? 1 : -1);
+  const SEOImage = data.lessons.nodes[0].image.asset.fluid;
+  
     return (
       <React.Fragment>
-        <SEO title={pageContext.categoryName} description={pageContext.categoryDescription} />
+        <SEO 
+          title={pageContext.categoryName} 
+          description={pageContext.categoryDescription} 
+          image={SEOImage.src}
+          location={`https://www.convointerview.com/category/${pageContext.categorySlug}`}
+        />
         <Layout>
           <div className={lessonsStyle.pageContainer}>
             <div className={lessonsStyle.header}>
@@ -64,7 +71,7 @@ export const query = graphql`
         }
         image {
           asset {
-            fluid(maxWidth: 200) {
+            fluid(maxWidth: 1200) {
               ...GatsbySanityImageFluid
             }
           }

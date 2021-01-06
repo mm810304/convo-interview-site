@@ -25,7 +25,8 @@ async function turnLessonsIntoCategoryPages({ graphql, actions }) {
       component: categoryLessonTemplate,
       context: {
         categoryName: category.category_name,
-        categoryDescription: category.description
+        categoryDescription: category.description,
+        categorySlug: category.slug.current
       }
     });
   })
@@ -54,7 +55,8 @@ async function turnLessonIntoLessonPage({ graphql, actions}) {
       component: lessonTemplate,
       context: {
         lessonTitle: lesson.title,
-        lessonId: lesson.id
+        lessonId: lesson.id,
+        lessonSlug: lesson.slug.current
       }
     });
   })
@@ -85,7 +87,8 @@ data.blogs.nodes.forEach((blog) => {
     component: blogTemplate,
     context: {
       title: blog.title,
-      blogId: blog.id
+      blogId: blog.id,
+      blogSlug: blog.slug.current
     }
   });
 });

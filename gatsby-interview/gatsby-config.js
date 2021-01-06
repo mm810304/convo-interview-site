@@ -8,15 +8,14 @@ module.exports = {
     description: `Practice speaking English and prepare for your next job interview.`
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-tagmanager',
       options: {
-        trackingId: 'UA-148727012-3',
-        head: true,
-        anonymize: true,
+        id: 'GTM-TPW2V8N',
+        includeInDevelopment: false
       },
     },
-    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-sanity',
       options: {

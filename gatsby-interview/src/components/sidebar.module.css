@@ -35,18 +35,18 @@
   
   .list {
     list-style-type: none;
-
+    text-align: center;
   }
   
   .list li a {
-    display: block;
-    text-align: center;
+    display: inline-block;
     text-transform: capitalize;
-    color: white;
+    color: var(--off-white);
     font-size: 3.2rem;
     margin-bottom: 5rem;
+    margin-right: 0;
     transition: all .3s linear;
-    border-radius: 10px
+    border-radius: 10px;
   }
   
   .list a {

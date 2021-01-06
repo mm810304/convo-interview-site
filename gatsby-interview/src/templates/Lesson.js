@@ -32,9 +32,16 @@ const Lesson = ({ data: { lesson }, pageContext }) => {
       }
     };
 
+    const SEOImage = lesson.image.asset.fluid;
+
     return (
       <React.Fragment>
-        <SEO title={pageContext.lessonTitle} description={`"${pageContext.lessonTitle}" - Learn professional and fluent ways to answer this English job interview question, listen to and see examples, and practice speaking to be ready to answer it fluently.`}/>
+        <SEO 
+          title={pageContext.lessonTitle} 
+          description={`Learn professional and fluent ways to answer the common English job interview question "${pageContext.lessonTitle}". Listen to a conversation, see example sentences, and practice speaking.`}
+          image={SEOImage.src}
+          location={`https://www.convointerview.com/lesson/${pageContext.lessonSlug}`}
+        />          
         <Layout>
           <div className={lessonStyle.wrapper}>
             <h1 className={lessonStyle.title}>{lesson.title}</h1>
@@ -73,6 +80,13 @@ export const query = graphql`
       title
       dialogue
       patterns
+      image {
+        asset {
+          fluid(maxWidth: 1200) {
+            ...GatsbySanityImageFluid
+          }
+        }
+      }
       full_audio {
         asset {
           title

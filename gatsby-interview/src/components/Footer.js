@@ -12,7 +12,7 @@ const Footer = () => {
         <div>
           <h3 className={footerStyles.mainText}>
             Have a Question or See a Mistake?
-            <a className="footer-a" href="mailto:support@convoenglish.co">  Contact Us</a>
+            <a className="footer-a" href="mailto:support@convoenglish.co">  Contact Us</a> - support@convoEnglish.co
           </h3>
         </div>
         <div>
@@ -26,8 +26,6 @@ const Footer = () => {
             <Link className="footer-a" to={linkData[3].url}>More Free English Lessons</Link>
           </h3>
         </div>
-
-
       </footer>
     );
 };

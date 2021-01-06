@@ -1,10 +1,9 @@
 import React from 'react';
 
-
+import BottomAd from './BottomAd';
 import Header from './Header';
 import Footer from './Footer';
 import Sidebar from './Sidebar';
-import BottomAd from './BottomAd';
 
 import 'normalize.css';
 import '../styles/index.css';

@@ -13,6 +13,7 @@ const LessonDirections = () => {
         className={LessonDirectionsStyle.button}
         type="button"
         onClick={() => setShowInfo(!showInfo)}
+        aria-label="Show How to Use Directions"
       >
         {showInfo ? <FaMinus /> : <FaPlus />}
       </button>

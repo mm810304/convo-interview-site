@@ -9,13 +9,20 @@ import indexStyles from './index.module.css';
 
 const IndexPage = ({ data }) => {
   const categories = data.categories.nodes;
+  const SEOImage = categories[0].image.asset.fluid;
+  
   return (
     <React.Fragment>
-      <SEO title="English Job Interview Preparation" description="Prepare to speak professional and fluent English at your next job interview."/>
+      <SEO 
+        title="English Job Interview Preparation" 
+        description="Speak professional and fluent English at your next job interview."
+        location="https://www.convointerview.com"
+        image={SEOImage.src}
+      />
       <Layout>
         <div className={indexStyles.headerContainer}>
           <h1 className={indexStyles.title}>Convo Interview</h1>
-          <p className={indexStyles.description}>Speak professional and fluent English at your next job interview or improve your business English skills. Practice speaking, learn useful sentence patterns, and see many natural examples. <strong>Choose a category and get started!</strong></p>
+          <p className={indexStyles.description}>Speak professional and fluent English for job interviews or business situations. <strong>Choose a category and get started!</strong></p>
         </div>
         <div>
           <CategoryList categories={categories} />
@@ -38,7 +45,7 @@ export const query = graphql`
       }
       image {
         asset {
-          fluid(maxWidth: 400) {
+          fluid(maxWidth: 1200) {
             ...GatsbySanityImageFluid
           }
         }

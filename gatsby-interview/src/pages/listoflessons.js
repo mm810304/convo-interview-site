@@ -11,20 +11,24 @@ const ListOfAllLessonsPage = ({ data }) => {
   const lessons = data.lessons.nodes;
     return (
       <React.Fragment>
-        <SEO title="List of All English Job Interview Lessons" description="Complete list of English job interview questions with full conversation and vocabulary lessons" />
+        <SEO 
+          title="List of All English Job Interview Lessons" 
+          description="Complete list of English job interview questions with full conversation and vocabulary lessons" 
+          location="https://www.convointerview.com/listoflessons"  
+        />
         <Layout>
           <div className={allLessonsStyle.wrapper}>
-            {categories.map((category) => {
+            {categories.map((category, index) => {
               const categoryName = category.category_name;
               return (
-                <div className={allLessonsStyle.lessonsContainer}>
+                <div key={index} className={allLessonsStyle.lessonsContainer}>
                   <h1>{categoryName}</h1>
                   <ol>
                     {lessons.map((lesson) => {
                       const lessonCategory = lesson.category.category_name;
                       if (lessonCategory === categoryName) {
                         return (
-                          <li className={allLessonsStyle.listItem}><Link to={`/lesson/${lesson.slug.current}`}>{lesson.title}</Link></li>
+                          <li key={lesson.id} className={allLessonsStyle.listItem}><Link to={`/lesson/${lesson.slug.current}`}>{lesson.title}</Link></li>
                         )
                       } else {
                         return null;

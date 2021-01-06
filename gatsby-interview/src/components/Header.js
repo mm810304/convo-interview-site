@@ -13,7 +13,7 @@ const Header = ({ toggleSidebar }) => {
       <div className={headerStyles.navCenter}>
         <div className={headerStyles.navHeader}>
         <Link to="/"><h2 className={headerStyles.logo}>Convo</h2></Link>
-          <button type="button" onClick={toggleSidebar}>
+          <button type="button" onClick={toggleSidebar} aria-label="Dropdown Menu">
             <FaAlignRight></FaAlignRight>
           </button>
           <ul className={headerStyles.pageLinks}>

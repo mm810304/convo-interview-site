@@ -9,9 +9,16 @@ import blogsStyle from './blogs.module.css';
 
 const BlogIndexPage = ({ data }) => {
   const blogs = data.blogs.nodes;
+  const image = data.blogs.nodes[0].image.asset.fluid;
+
     return (
       <React.Fragment>
-        <SEO title="English Inteview Tips and Advice" description="Find out some useful tips and advice to make sure you ace your next English job interview" />
+        <SEO 
+          title="English Inteview Tips and Advice" 
+          description="Find out some useful tips and advice to make sure you ace your next English job interview" 
+          image={image.src}
+          location="https://www.convointerview.com/blogs"
+        />
         <Layout>
           <main className={blogsStyle.main}>
             <div className={blogsStyle.header}>
